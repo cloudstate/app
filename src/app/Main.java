@@ -28,6 +28,9 @@ public final class Main {
 
     public static void main(final String[] args) {
         System.out.println("Starting Undertow");
+        System.out.println(HOST + ":" + PORT);
+        System.out.println("    GET /alive");
+        System.out.println("    GET /products");
 
         builder().addHttpListener(PORT, HOST)
                 .setHandler(routing()
