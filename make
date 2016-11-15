@@ -1,0 +1,3 @@
+./clean
+./comp
+./create-jar
